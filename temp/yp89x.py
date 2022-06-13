@@ -1,0 +1,1 @@
+print("Hello World");a= input("please enter a number: ");print(a)
