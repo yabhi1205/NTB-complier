@@ -19,6 +19,7 @@ router.post('/',
             })
                 .catch(err => {
                     console.log(err)
+                    return res.status(400).send(err)
                 })
             await fs.unlink(`./temp/${r}.py`, (err) => {
                 if (err) {
